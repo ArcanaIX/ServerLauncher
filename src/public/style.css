@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/minecraft-4');
 
 :root{
     --primary-color: #40894b;
@@ -85,7 +86,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Noto Sans", sans-serif;
+    font-family: "Minecraft", sans-serif;
     font-size: 24px;
     border: none;
     border-radius: 10px;
@@ -93,4 +94,34 @@
     height: 40px;
     transform: translateY(-50%);
     color: var(--white);
+}
+
+.information {
+    width: 100%;
+    padding-inline: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    color: white;
+    font-family: "Minecraft", sans-serif;
+}
+
+.connectedPlayer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.connectedPlayer .statusPill.online {
+    width: 12px;
+    aspect-ratio: 1;
+    background-color: var(--primary-color);
+    border-radius: 100%;
+}
+
+.connectedPlayer .statusPill.offline {
+    width: 12px;
+    aspect-ratio: 1;
+    background-color: #FF1313;
+    border-radius: 100%;
 }
